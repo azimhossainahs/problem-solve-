@@ -1,0 +1,17 @@
+#include <stdio.h>
+// area of rectangle using function
+float rect_area(){
+   float x,y;
+      printf("Enter the length :");
+      scanf("%f", &x);
+      printf("Enter height: ");
+      scanf("%f",&y);
+      return x*y;   
+}
+void main(){
+float ans;
+ans = rect_area();
+printf("%.2f",ans);
+   
+
+}
