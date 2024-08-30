@@ -1,0 +1,17 @@
+#include <stdio.h>
+// area of trapizoid
+float areaofTrapizium(){
+   float x, y, h;
+      printf("Enter height :");
+      scanf("%f", &h);
+      printf("Enter base :");
+      scanf("%f", &x);
+      printf("Enter small base: ");
+      scanf("%f",&y);
+      return 0.5*(x+y)*h;   
+}
+void main(){
+float ans;
+ans = areaofTrapizium();
+printf("%.2f",ans);
+   }
