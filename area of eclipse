@@ -1,0 +1,15 @@
+#include <stdio.h>
+// area of trapizoid
+float areaofeclipse(){
+   float  h, x;
+      printf("Enter a :");
+      scanf("%f", &h);
+      printf("Enter b :");
+      scanf("%f", &x);
+      return 3.1416*x*h;   
+}
+void main(){
+float ans;
+ans = areaofeclipse();
+printf("%.2f",ans);
+   }
