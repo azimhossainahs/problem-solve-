@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+// Function to calculate the area of a circle
+float areaOfCircle() {
+    float r;
+    printf("Enter radius: ");
+    scanf("%f", &r);
+    return 3.1416 * r * r;   
+}
+
+// Function to calculate the area of an ellipse
+float areaOfEllipse() {
+    float a, b;
+    printf("Enter semi-major axis (a): ");
+    scanf("%f", &a);
+    printf("Enter semi-minor axis (b): ");
+    scanf("%f", &b);
+    return 3.1416 * a * b;   
+}
+
+// Function to calculate the area of a square
+float areaOfSquare() {
+    float side;
+    printf("Enter side length: ");
+    scanf("%f", &side);
+    return side * side;   
+}
+
+// Function to calculate the area of a trapezium
+float areaOfTrapezium() {
+    float a, b, h;
+    printf("Enter height: ");
+    scanf("%f", &h);
+    printf("Enter length of base 1: ");
+    scanf("%f", &a);
+    printf("Enter length of base 2: ");
+    scanf("%f", &b);
+    return 0.5 * (a + b) * h;   
+}
+
+// Function to calculate the area of a triangle
+float areaOfTriangle() {
+    float base, height;
+    printf("Enter base: ");
+    scanf("%f", &base);
+    printf("Enter height: ");
+    scanf("%f", &height);
+    return 0.5 * base * height;   
+}
+
+// Function to calculate the area of a rectangle
+float areaOfRectangle() {
+    float length, height;
+    printf("Enter length: ");
+    scanf("%f", &length);
+    printf("Enter height: ");
+    scanf("%f", &height);
+    return length * height;   
+}
+
+int main() {
+    int choice = 0;
+    float result;
+    
+    printf("Press 1 to find the area of a circle\n");
+    printf("Press 2 to find the area of an ellipse\n");
+    printf("Press 3 to find the area of a square\n");
+    printf("Press 4 to find the area of a trapezium\n");
+    printf("Press 5 to find the area of a triangle\n");
+    printf("Press 6 to find the area of a rectangle\n");
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
+
+    switch(choice) {
+        case 1:
+            result = areaOfCircle();
+            break;
+        case 2:
+            result = areaOfEllipse();
+            break;
+        case 3:
+            result = areaOfSquare();
+            break;
+        case 4:
+            result = areaOfTrapezium();
+            break;
+        case 5:
+            result = areaOfTriangle();
+            break;
+        case 6:
+            result = areaOfRectangle();
+            break;
+        default:
+            printf("Invalid choice. Please enter a number between 1 and 6.\n");
+    }
+
+    printf("The result is: %.2f\n", result);
+}
