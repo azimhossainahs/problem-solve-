@@ -1,0 +1,13 @@
+#include <stdio.h>
+// area of trapizoid
+float areaofsquare(){
+   float  h;
+      printf("Enter r :");
+      scanf("%f", &h);
+      return h*h;   
+}
+void main(){
+float ans;
+ans = areaofsquare();
+printf("%.2f",ans);
+   }
